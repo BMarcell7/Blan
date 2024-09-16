@@ -7,3 +7,10 @@ h1 {
     color: #d0db34;
     text-align: center;
 }
+
+p {
+    color: pink;
+    text-align: center;
+    font-family: 'Times New Roman';
+
+}
