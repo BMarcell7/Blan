@@ -9,9 +9,31 @@
 
 </head>
 <body>
+    <header>
+        <div class="container">
+            <button class="btn main-button" onclick="window.location.href='{% url 'Matricák' %}'">Matricák</button>
+            <div class="clock" id="clock">00:00:00</div>
+        </div>
+
+        <script>
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to display clock immediately
+    </script>
+    </header>
+
     <h1>Köszöntelek a weboldalon</h1>
     <p>Ezen az oldalon lesz minden ami a főoldalra kell</p>
-    <form action="{% url 'Matricák' %}">
-        <button>Matricák</button>
+    <button class="btn" onclick="window.location.href='{% url 'Matricák' %}'">Matricák</button>
+    <p>Ez is ugyan ilyen?</p>
+    <button class="btn" onclick="window.location.href='{% url 'test' %}'">Teszt</button>
+    <footer>
+        <p>&copy; 2024 Firtha Webpage</p>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,8 @@
+.btn {
+    background-color: #08bc41;
+}
 body {
-    background-color: #1c7523;
+    background-color: #3c0846;
     font-family: Arial, sans-serif;
 }
 
@@ -9,8 +12,42 @@ h1 {
 }
 
 p {
-    color: pink;
+    color: red;
     text-align: center;
     font-family: 'Times New Roman';
 
+}
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.clock {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align:right;
+}
+
+.main-button {
+    font-size: 18px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.main-button:hover{
+    background-color: #08bc41;
+}
+
+header{
+    padding: 1px 0;
+    background-color: pink;
+}
+
+footer{
+    background-color: #53a510;
+    padding: 5px;
 }

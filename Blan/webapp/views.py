@@ -8,3 +8,6 @@ def home(request):
 
 def stickers(request):
     return render(request, 'stickers.html')
+
+def test(request):
+    return render(request, 'test.html')
