@@ -11,8 +11,8 @@ h1 {
 }
 
 .my-button {
-    background-color: #4CAF50;
-    color: white;
+    background: none;
+    color: rgb(168, 19, 19);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -22,6 +22,17 @@ h1 {
 
 .my-button:hover {
     background-color: #45a049;
+}
+
+button img{
+    width: 100px;
+    height: auto;
+    background: none;
+    border: none;
+}
+
+.button img:hover {
+    background-color: #f4f4f4;
 }
 
 header {
@@ -55,3 +66,4 @@ footer {
         padding: 10px;
     }
 }
+

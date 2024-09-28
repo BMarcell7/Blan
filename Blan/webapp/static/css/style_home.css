@@ -29,17 +29,18 @@ p {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    text-align:right;
+    text-align: right;
 }
 
 .main-button {
     font-size: 18px;
-    margin: 0 auto;
-    background-color: blue;
+    margin: 0;
+    background: none;
+    border: 0;
 }
 
 .main-button:hover{
-    background-color: #08bc41;
+    text-decoration: underline;
 }
 
 header{

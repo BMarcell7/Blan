@@ -11,20 +11,13 @@
 <body>
     <header>
         <div class="container">
-            <button class="btn main-button" onclick="window.location.href='{% url 'Matricák' %}'">Matricák</button>
-            <div class="clock" id="clock">00:00:00</div>
+            <button class="main-button" onclick="window.location.href='{% url 'Home' %}'">Főoldal</button>
+                
+            <h1 class="clock" id="time", an>00:00</h1>
         </div>
 
-        <script>
-        function updateClock() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString();
-            document.getElementById('clock').textContent = timeString;
-        }
+        <script src="{% static 'js/clock.js' %}"></script>
 
-        setInterval(updateClock, 1000);
-        updateClock(); // Initial call to display clock immediately
-    </script>
     </header>
 
     <h1>Köszöntelek a weboldalon</h1>
