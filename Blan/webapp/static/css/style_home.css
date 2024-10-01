@@ -1,8 +1,8 @@
 .btn {
-    background-color: #08bc41;
+    background-color: lime;
 }
 body {
-    background-color: #3c0846;
+    background-color: black;
     font-family: Arial, sans-serif;
 }
 
@@ -37,6 +37,7 @@ p {
     margin: 0;
     background: none;
     border: 0;
+    color: white;
 }
 
 .main-button:hover{
