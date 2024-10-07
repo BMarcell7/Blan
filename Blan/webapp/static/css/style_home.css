@@ -12,17 +12,15 @@ h1 {
 }
 
 p {
-    color: red;
+    color: white;
     text-align: center;
-    font-family: 'Times New Roman';
-
 }
 .container {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .clock {
@@ -50,18 +48,19 @@ header{
 }
 
 footer{
-    background-color: blue;
+    background-color: black;
     padding: 5px;
 }
 
 
-.image-container {
-    display: flex;
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center;    /* Vertically centers the content (if container has height) */
-    height: 100vh;         /* Optional: Set height to fill the viewport */
+.logo-container {
+    display: flex;                /* Use flexbox to center content */
+    justify-content: center;      /* Horizontally center the content */
+    align-items: center;          /* Vertically center the content */
+    height: 80px;                /* Full viewport height for vertical centering */
 }
-.responsive-image {
-    max-width: 100%;      /* Responsive image */
-    height: auto;         /* Maintain aspect ratio */
+
+.logo {
+    max-width: 200px;             /* Set maximum width for the logo image */
+    height: auto;                 /* Maintain the aspect ratio */
 }

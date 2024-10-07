@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="{% static 'css\style_sticker.css' %}">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="{% static 'images\axolotl.png' %}" alt=Axolotl>
+        </div>
+        <div class="container">
+            <button class="main-button" onclick="window.location.href='{% url 'Home' %}'">Főoldal</button>
+            <button class="main-button" onclick="window.location.href='{% url 'Matricák' %}'">Matricák</button> 
+            <button class="main-button" onclick="window.location.href='{% url 'test' %}'">Teszt</button>
+        </div>
+
+        <script src="{% static 'js/clock.js' %}"></script>
+
+    </header>
     <h1>Itt találod a matricáim</h1>
-    <form action="{% url 'Home' %}" method="get">
-        <button>Főoldal</button>
-    </form>
+    <footer>
+        <p>&copy; 2024 Firtha Webpage</p>
+    </footer>
 </body>
 </html>

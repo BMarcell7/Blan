@@ -1,3 +1,58 @@
 body {
+    background-color: black;
+}
+
+h1{
+    text-align: center;
     color: aqua;
 }
+
+p{
+    color: white;
+}
+
+header{
+    padding: 1px 0;
+    background-color: black;
+    color: red;
+
+}
+
+footer{
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: aqua;
+}
+
+
+.logo-container {
+    display: flex;                /* Use flexbox to center content */
+    justify-content: center;      /* Horizontally center the content */
+    align-items: center;          /* Vertically center the content */
+    height: 80px;                /* Full viewport height for vertical centering */
+}
+
+.logo {
+    max-width: 200px;             /* Set maximum width for the logo image */
+    height: auto;                 /* Maintain the aspect ratio */
+}
+.main-button {
+    font-size: 18px;
+    margin: 0;
+    background: none;
+    border: 0;
+    color: white;
+}
+
+.main-button:hover{
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
