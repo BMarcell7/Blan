@@ -10,10 +10,13 @@
 </head>
 <body>
     <header>
+        <div class=image-container>
+        <img class="img" src="{% static 'images\axolotl.png' %}" alt=Axolotl>
+        </div>
         <div class="container">
             <button class="main-button" onclick="window.location.href='{% url 'Home' %}'">Főoldal</button>
-                
-            <h1 class="clock" id="time", an>00:00</h1>
+            <button class="main-button" onclick="window.location.href='{% url 'Matricák' %}'">Matricák</button> 
+            <button class="main-button" onclick="window.location.href='{% url 'test' %}'">Teszt</button>
         </div>
 
         <script src="{% static 'js/clock.js' %}"></script>

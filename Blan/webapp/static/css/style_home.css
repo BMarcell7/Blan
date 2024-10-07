@@ -21,7 +21,7 @@ p {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -52,4 +52,16 @@ header{
 footer{
     background-color: blue;
     padding: 5px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;    /* Vertically centers the content (if container has height) */
+    height: 100vh;         /* Optional: Set height to fill the viewport */
+}
+.responsive-image {
+    max-width: 100%;      /* Responsive image */
+    height: auto;         /* Maintain aspect ratio */
 }
